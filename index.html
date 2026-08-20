@@ -8,21 +8,90 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- shared gold gradient + filter defs, reused by every icon on the page -->
+  <svg width="0" height="0" style="position:absolute">
+    <defs>
+      <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#f3d999"/>
+        <stop offset="45%" stop-color="#c9a961"/>
+        <stop offset="100%" stop-color="#8a6f3f"/>
+      </linearGradient>
+      <radialGradient id="gemGrad" cx="35%" cy="30%" r="75%">
+        <stop offset="0%" stop-color="#fffdf5"/>
+        <stop offset="35%" stop-color="#f3d999"/>
+        <stop offset="75%" stop-color="#c9a961"/>
+        <stop offset="100%" stop-color="#8a6f3f"/>
+      </radialGradient>
+    </defs>
+  </svg>
+
+  <div class="sparkle-field" aria-hidden="true">
+    <span class="sparkle s1"></span>
+    <span class="sparkle s2"></span>
+    <span class="sparkle s3"></span>
+    <span class="sparkle s4"></span>
+    <span class="sparkle s5"></span>
+    <span class="sparkle s6"></span>
+  </div>
+
   <main class="wrap">
+
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <path d="M24 6 L38 18 L24 42 L10 18 Z" stroke="url(#goldGrad)" stroke-width="1.4" fill="url(#gemGrad)" fill-opacity="0.12"/>
+        <path d="M10 18 H38 M17 18 L24 6 L31 18 M17 18 L24 42 M31 18 L24 42" stroke="url(#goldGrad)" stroke-width="1"/>
+      </svg>
+      <span class="brand-name">Auré Jewelry</span>
+    </div>
+
     <p class="eyebrow">Est. 2026</p>
     <h1>Something Timeless<br />Is On Its Way</h1>
-    <div class="divider" aria-hidden="true"></div>
+    <div class="divider" aria-hidden="true"><span class="divider-gem"></span></div>
     <p class="lede">
       We're crafting a new home for our jewelry collection —
       curated pieces, custom designs, and a private browsing experience.
     </p>
+
+    <div class="categories">
+      <div class="category">
+        <svg viewBox="0 0 64 64" class="cat-icon" aria-hidden="true">
+          <circle cx="32" cy="38" r="16" fill="none" stroke="url(#goldGrad)" stroke-width="2"/>
+          <path d="M32 22 L40 12 L24 12 Z" fill="url(#gemGrad)" stroke="url(#goldGrad)" stroke-width="1.2"/>
+          <path d="M24 12 L32 18 L40 12" stroke="url(#goldGrad)" stroke-width="1"/>
+        </svg>
+        <span>Rings</span>
+      </div>
+      <div class="category">
+        <svg viewBox="0 0 64 64" class="cat-icon" aria-hidden="true">
+          <path d="M14 14 C14 34 22 40 32 40 C42 40 50 34 50 14" fill="none" stroke="url(#goldGrad)" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="1 5.5"/>
+          <path d="M32 40 L26 48 L32 58 L38 48 Z" fill="url(#gemGrad)" stroke="url(#goldGrad)" stroke-width="1.2"/>
+        </svg>
+        <span>Necklaces</span>
+      </div>
+      <div class="category">
+        <svg viewBox="0 0 64 64" class="cat-icon" aria-hidden="true">
+          <path d="M32 10 a6 6 0 1 1 -0.01 0" fill="none" stroke="url(#goldGrad)" stroke-width="2"/>
+          <line x1="32" y1="22" x2="32" y2="32" stroke="url(#goldGrad)" stroke-width="1.4"/>
+          <path d="M32 32 L40 44 L32 54 L24 44 Z" fill="url(#gemGrad)" stroke="url(#goldGrad)" stroke-width="1.2"/>
+        </svg>
+        <span>Earrings</span>
+      </div>
+      <div class="category">
+        <svg viewBox="0 0 64 64" class="cat-icon" aria-hidden="true">
+          <path d="M18 30 L32 12 L46 30 L32 52 Z" fill="url(#gemGrad)" fill-opacity="0.15" stroke="url(#goldGrad)" stroke-width="1.6"/>
+          <path d="M18 30 H46 M25 30 L32 12 L39 30 M25 30 L32 52 M39 30 L32 52" stroke="url(#goldGrad)" stroke-width="1"/>
+        </svg>
+        <span>Custom Design</span>
+      </div>
+    </div>
 
     <div class="contact">
       <p>For account access or inquiries, reach out to us directly:</p>
       <a class="contact-link" href="mailto:info@yourdomain.com">info@yourdomain.com</a>
     </div>
 
-    <p class="footer-note">&copy; <span id="year"></span> All Rights Reserved.</p>
+    <p class="footer-note">&copy; <span id="year"></span> Auré Jewelry. All Rights Reserved.</p>
   </main>
 
   <script>
