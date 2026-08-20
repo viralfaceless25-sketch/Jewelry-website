@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coming Soon | Fine Jewelry</title>
+  <meta name="description" content="Our new jewelry collection website is launching soon. Contact us to get notified." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <p class="eyebrow">Est. 2026</p>
+    <h1>Something Timeless<br />Is On Its Way</h1>
+    <div class="divider" aria-hidden="true"></div>
+    <p class="lede">
+      We're crafting a new home for our jewelry collection —
+      curated pieces, custom designs, and a private browsing experience.
+    </p>
+
+    <div class="contact">
+      <p>For account access or inquiries, reach out to us directly:</p>
+      <a class="contact-link" href="mailto:info@yourdomain.com">info@yourdomain.com</a>
+    </div>
+
+    <p class="footer-note">&copy; <span id="year"></span> All Rights Reserved.</p>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

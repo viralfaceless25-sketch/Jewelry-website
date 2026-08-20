@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap');
+
+:root {
+  --bg: #0e0d0c;
+  --bg-radial: #1a1714;
+  --gold: #c9a961;
+  --gold-soft: #a9895a;
+  --ivory: #f3ede1;
+  --ivory-dim: #cfc6b4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background: radial-gradient(circle at 50% 30%, var(--bg-radial) 0%, var(--bg) 70%);
+  color: var(--ivory);
+  font-family: 'Jost', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.wrap {
+  max-width: 640px;
+  width: 100%;
+  text-align: center;
+  padding: 48px 32px;
+}
+
+.eyebrow {
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0 0 20px;
+}
+
+h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  font-size: clamp(2.2rem, 6vw, 3.4rem);
+  line-height: 1.25;
+  margin: 0;
+  color: var(--ivory);
+  letter-spacing: 0.02em;
+}
+
+.divider {
+  width: 72px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  margin: 32px auto;
+}
+
+.lede {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--ivory-dim);
+  max-width: 460px;
+  margin: 0 auto 40px;
+}
+
+.contact {
+  border-top: 1px solid rgba(201, 169, 97, 0.25);
+  padding-top: 28px;
+  margin-top: 8px;
+}
+
+.contact p {
+  font-size: 0.85rem;
+  color: var(--ivory-dim);
+  margin: 0 0 10px;
+  letter-spacing: 0.02em;
+}
+
+.contact-link {
+  display: inline-block;
+  color: var(--gold);
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.contact-link:hover {
+  color: var(--ivory);
+  border-color: var(--gold-soft);
+}
+
+.footer-note {
+  margin-top: 56px;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  color: rgba(207, 198, 180, 0.45);
+}
